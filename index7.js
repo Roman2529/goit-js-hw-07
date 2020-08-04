@@ -55,22 +55,22 @@
 
 //--------------------04
 
-// const decrementFn = document.querySelector('[decrement]');
-// const incrementFn = document.querySelector('[increment]');
+const decrementFn = document.querySelector('[decrement]');
+const incrementFn = document.querySelector('[increment]');
 
-// const counterValue = (value) => {
-//     if (event.target.getAttribute('data-action') === 'decrement') {
-//         document.querySelector('#value').textContent -= 1;
-//     } else {
-//         document.querySelector('#value').textContent += 1;
-//     };
-// };
-// document.addEventListener('click', counterValue);
-// document.addEventListener('click', counterValue);
+const counterValue = (value) => {
+    
+    if (event.target.getAttribute('data-action') === 'decrement') {
+        document.querySelector('#value').textContent--;
+    } else {
+        document.querySelector('#value').textContent++;
+    };
+    return value;
+};
 
+document.addEventListener('click', counterValue);
 
-
-//--------------------05
+// //--------------------05
 
 // const inputRef = document.querySelector('#name-input');
 // const outputRef = document.querySelector('#name-output');
@@ -79,7 +79,7 @@
 //     outputRef.textContent = event.target.value;
 // });
 
-//-------------------06
+// -------------------06
 
 // const inputValid = document.querySelector("#validation-input");
 // inputValid.addEventListener("blur", (event) => {
@@ -100,31 +100,21 @@
 //     spanText.style.fontSize = event.target.value + "px";
 // })
 
+// const users = [
+//     { name: 'Mango', isActive: true },
+//     { name: 'Poly', isActive: false },
+//     { name: 'Ajax', isActive: true },
+//     { name: 'Chelsey', isActive: false },
+// ];
+
+// // Для каждого элемента коллекции (user) проверим поле isActive.
+// // Если оно true, то текущий элемент (user) будет записан в результирующий массив.
+// const activeUsers = users.filter(user => user.isActive);
+// console.log(activeUsers);
+
+// // Для каждого элемента коллекции (user) проверим поле isActive.
+// // Если оно false, то текущий элемент (user) будет записан в результирующий массив.
+// const inactiveUsers = users.filter(user => !user.isActive);
+// console.log(inactiveUsers);
 
 
-
-
-
-
-
-
-
-// const divi = document.querySelector('.parant')
-
-// const box = document.createElement('p');
-// box.textContent = '1';
-// box.style.backgroundColor = 'red';
-// box.style.display = 'inline-block';
-// box.style.margin = '40px';
-// box.style.padding = '40px';
-// console.log(box);
-
-// const box2 = document.createElement('p');
-// box2.textContent = '2';
-// box2.style.background = 'blue';
-// box2.style.display = 'inline-block';
-// box2.style.margin = '40px';
-// box2.style.padding = '40px';
-// console.log(box2);
-// divi.appendChild(box);
-// divi.appendChild(box2);
