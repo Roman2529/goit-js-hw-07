@@ -3,14 +3,6 @@
 // const itemsRef = document.querySelectorAll('.item').length;
 // console.log(`В списке ${itemsRef} категории`);
 
-// const titleRef = document.querySelectorAll('.item');
-// console.log(titleRef)
-// titleRef.forEach((item) =>
-//     console.log(
-//         `Категория: ${item.querySelector('h2').textContent}
-//         Количество: ${item.querySelectorAll('li').length}`
-//     )
-// );
 
 //-------------------02
 
