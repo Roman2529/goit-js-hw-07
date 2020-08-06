@@ -1,7 +1,15 @@
 //----------------01
 
-// const itemsRef = document.querySelectorAll('.item').length;
-// console.log(`В списке ${itemsRef} категории`);
+// const itemsRef = document.querySelectorAll('.item');
+
+// console.log(`В списке ${itemsRef.length} категории`);
+// console.log(itemsRef)
+// itemsRef.forEach((item) =>
+//     console.log(
+//         `Категория: ${item.querySelector('h2').textContent}
+//         Количество: ${item.querySelectorAll('li').length}`
+//     )
+// );
 
 
 //-------------------02
@@ -54,21 +62,30 @@
 // document.querySelector("#gallery").append(...createGallery);
 
 //--------------------04
+// let value = document.querySelector("#value");
+// const decrementFn = document.querySelector('[data-action="decrement"]');
+// const incrementFn = document.querySelector('[data-action="increment"]');
+// let counterValue = 0;
 
-const decrementFn = document.querySelector('[decrement]');
-const incrementFn = document.querySelector('[increment]');
+// let decrement = () => {
+//     updateData("decrement");
+//     updateSpan();
+// };
+// let increment = () => {
+//     updateData("increment");
+//     updateSpan();
+// };
+// let updateData = (str) => {
+//     if (str === "decrement") counterValue--
+//     else counterValue++
+// }
 
-const counterValue = (value) => {
-    
-    if (event.target.getAttribute('data-action') === 'decrement') {
-        document.querySelector('#value').textContent--;
-    } else {
-        document.querySelector('#value').textContent++;
-    };
-    return value;
-};
+// decrementFn.addEventListener('click', decrement);
+// incrementFn.addEventListener('click', increment);
 
-document.addEventListener('click', counterValue);
+// let updateSpan = () => {
+//     value.textContent = counterValue;
+// }
 
 // //--------------------05
 
@@ -82,8 +99,10 @@ document.addEventListener('click', counterValue);
 // -------------------06
 
 // const inputValid = document.querySelector("#validation-input");
+// const gettingAtribute = inputValid.getAttribute("data-length");
+
 // inputValid.addEventListener("blur", (event) => {
-//     if (event.target.value.length == inputValid.getAttribute("data-length")) {
+//     if (event.target.value.length == gettingAtribute) {
 //         inputValid.classList.add("valid");
 //         inputValid.classList.remove("invalid");
 //     } else {
@@ -91,6 +110,8 @@ document.addEventListener('click', counterValue);
 //         inputValid.classList.add("invalid");
 //     }
 // })
+// console.log(inputValid)
+
 
 //--------------------07
 
@@ -98,23 +119,5 @@ document.addEventListener('click', counterValue);
 // const spanText = document.querySelector("#text");
 // inputRef.addEventListener("mouseup", (event) => {
 //     spanText.style.fontSize = event.target.value + "px";
-// })
-
-// const users = [
-//     { name: 'Mango', isActive: true },
-//     { name: 'Poly', isActive: false },
-//     { name: 'Ajax', isActive: true },
-//     { name: 'Chelsey', isActive: false },
-// ];
-
-// // Для каждого элемента коллекции (user) проверим поле isActive.
-// // Если оно true, то текущий элемент (user) будет записан в результирующий массив.
-// const activeUsers = users.filter(user => user.isActive);
-// console.log(activeUsers);
-
-// // Для каждого элемента коллекции (user) проверим поле isActive.
-// // Если оно false, то текущий элемент (user) будет записан в результирующий массив.
-// const inactiveUsers = users.filter(user => !user.isActive);
-// console.log(inactiveUsers);
-
+// });
 
